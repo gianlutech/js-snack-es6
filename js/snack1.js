@@ -10,7 +10,7 @@ const bikeList = [
     { nome: 'Decathlon', peso: 35 },
     { nome: 'Scott', peso: 28 }
 ]
-console.log(bikeList.peso);
+console.log(bikeList);
 let biciConPesoMinore = bikeList[0]
 for (let i = 0; i < bikeList.length; i++) {
     const bike = bikeList[i];
