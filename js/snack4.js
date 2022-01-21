@@ -24,14 +24,15 @@ const students = [
     { id: 488, nome: 'raffa de lucia', sommaTotale: 120 },
 ]
 
-/* const capitalizedNames = students.map((name) => {
-    const firstLetter = name.charAt(1).toUpperCase();
-    const otherLetters = name.substring(1).toLowerCase();
+const capitalizedNames = students.map((name) => {
+    const firstLetter = name.nome.charAt(0).toUpperCase();
+    const otherLetters = name.nome.substring(1).toLowerCase();
     return firstLetter + otherLetters;
 });
-console.log(capitalizedNames) */
+console.log(capitalizedNames);
 
 
 const sommaVoti = students.filter((sommaMaggiore) => sommaMaggiore.sommaTotale > 70);
+const sommaVotiId = students.filter((sommaMaggiore) => sommaMaggiore.sommaTotale > 70 && sommaMaggiore.id > 120);
 
-console.log(sommaVoti)
+console.log(sommaVoti, sommaVotiId);
