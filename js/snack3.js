@@ -6,3 +6,8 @@ La funzione ritornerà un nuovo array con i valori che hanno la posizione compre
 Usiamo i nuovi metodi degli array visti oggi in classe.
 */
 
+const myArray = ['Mattia', 'Emilia', 'Raffaele', 'Filippo', 'Barbara', 'Antrè'];
+
+const arraySliceFilter = (arr, start, end) => arr.filter((item, index) => index >= start && index <= end);
+console.log(arraySliceFilter(myArray, 3, 5));
+
